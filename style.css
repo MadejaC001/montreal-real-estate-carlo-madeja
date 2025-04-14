@@ -251,6 +251,13 @@ h6 {margin: 2em 0 2em 0;}
 p{margin: 0rem 1rem 1rem 1rem;
   border: dotted;}
 
+  main p:first-child{
+    color:goldenrod;
+    margin: 2rem 0 0rem 0;
+}
+
+ul{margin-left: 2rem;}
+ol{margin-left: 2rem;}
 
 label{}
 
@@ -481,8 +488,7 @@ aside {
     padding-right: 15%; /* ADJUST TO TASTE */
     border: 1px solid var(--border-color-light);
     margin: 0 auto;
-    background-color: blue;
-} 
+    background-color: #3b2252;} 
 
 main {
     width: 70%;
