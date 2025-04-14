@@ -138,6 +138,15 @@
       ON THE ** WIDEST PAGE TITLE IN THE SITE **      */
   
   
+      img {
+        background-repeat: no-repeat;
+        background-size: 240%;
+        padding-top: 0rem;
+        position: relative;
+        background-blend-mode: darken;
+        width: 100%;
+      }
+
 
   body {
     font-family: var(--bodytext-font);
@@ -221,25 +230,27 @@ header .branding {
  }
  
  h1{
-  margin: 1em 0.07em 0.3em;
+  margin: 1rem 1rem 1rem 1rem;
   line-height: 1.2;
 }
 
-h2{
-  margin: 2em 0 2em 0;
-}
+h2 {
+  margin: 0rem 1rem -1rem 1rem;
+  border: dotted;
+  }
 
-h3{
-  margin: 2em 0 2em 0;
-}
+h3{margin: 1rem 5rem .5rem 1rem;
+  border: dotted;}
 
-h4 {margin: 2em 0 2em 0}
+h4 {margin: 1rem 1rem 1rem 1rem;}
 
 h5 {margin: 2em 0 2em 0;}
 
 h6 {margin: 2em 0 2em 0;}
 
-p{margin: 0 0 1em 0;}
+p{margin: 0rem 1rem 1rem 1rem;
+  border: dotted;}
+
 
 label{}
 
@@ -251,7 +262,8 @@ figcaption {}
 
 h2+p {}
   
-H2+ul, h2+ol {}
+H2+ul, h2+ol {margin: 1rem 5rem .5rem 1rem;
+  border: dotted;}
   
 h2+iframe {}
   
@@ -260,11 +272,15 @@ h2+form {}
 h2+blockquote {}
   
 h2+.gallery {}
-  
+
+h2:has(+ p) {
+  margin: 4rem 1rem 1rem 1rem;}  
 h2+table {}
 
-h2+h3 {}
+/* h2 + h3 {margin: -1rem 0rem .5rem 0rem;} */
   
+/* h3 + p {margin: -3rem 0 0 0rem;} */
+
 table {}
   
 .gallery {}
